@@ -1,0 +1,17 @@
+package pagina1;
+import java.util.Scanner;
+public class Menu5 {
+
+	public static void main(String[] args) {
+Scanner scanner=new Scanner(System.in);
+System.out.println("Digite um nome: ");
+String nome=scanner.nextLine();
+char primeiraLetra=nome.charAt(0);
+char ultimaLetra=nome.charAt(nome.length()-1);
+char letraDoMeio=nome.charAt(nome.length()/2);
+System.out.println("Primeira letra: "+primeiraLetra);
+System.out.println("Última letra: "+ultimaLetra);
+System.out.println("Letra do meio: "+letraDoMeio);
+	}
+
+}

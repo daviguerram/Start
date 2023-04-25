@@ -1,0 +1,60 @@
+package pagina1;
+import java.util.Scanner;
+public class Menu6 {
+
+	public static void main(String[] args) {
+Scanner leia=new Scanner(System.in);
+System.out.println("1- Verifica se uma pessoa é votante");
+System.out.println("2- Calcula o IMC de uma pessoa");
+int x=leia.nextInt();
+leia.nextLine();
+switch (x) {
+case 1:
+	System.out.println("Digite sua idade: ");
+	int num=leia.nextInt();
+	if (num<16) {
+		System.out.println("Você não pode votar");	
+	}else if(num<18 && num>70) {
+		System.out.println("Você pode votar, mas não é obrigado ");
+	}else {
+		System.out.println("Você é obrigado a votar");
+	}
+	break;
+case 2:
+	System.out.println("Digite seu peso em Kg e altura em m, respectivamente: ");
+	int peso=leia.nextInt();
+	double alt=leia.nextDouble();
+    double imc=peso/(alt*alt);
+    if(imc<16) {
+    	System.out.println("IMC: "+imc+" - Magreza grau III");
+    	System.out.println("Desnutrido, coma qualquer coisa em grande quantidade urgente");
+    }else if(imc<17) {
+    	System.out.println("IMC: "+imc+" - Magreza grau II");
+    	System.out.println("Está com chassi de grilo, faça uma dieta de engorda");
+    }else if(imc<18.5) {
+    	System.out.println("IMC: "+imc+" - Magreza grau I");
+    	System.out.println("Um pouco magro, vá pra academia melhorar o shape");
+    }else if(imc<25) {
+    	System.out.println("IMC: "+imc+" - Adequado");
+    	System.out.println("Você está no peso ideal, continue assim!");
+    }else if(imc<30) {
+    	System.out.println("IMC: "+imc+" - Pré-obeso");
+    	System.out.println("Tá gordinho, é melhor maneirar na comida");
+    }else if(imc<35) {
+    	System.out.println("IMC: "+imc+" - Obesidade grau I");
+    	System.out.println("Você está gordo, comece uma rotina de exercícios físicos imediatamente");
+    }else if(imc<40) {
+    	System.out.println("IMC: "+imc+" - Obesidade grau II");
+    	System.out.println("Você está muito gordo, procure um profissional e começe a cogitar porcedimentos cirúrgicos");
+    }else if(imc>=40) {
+    	System.out.println("IMC: "+imc+" - Obesidade grau III");
+    	System.out.println("Você está á beira da morte, faça algo antes que seja tarde");
+    }
+	
+	break;
+default:
+	System.out.println("Caractere inválido");
+	return;
+	}
+
+}}

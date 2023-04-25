@@ -1,0 +1,66 @@
+package pagina5;
+import java.util.Scanner;
+public class Alg142 {
+
+	public static void main(String[] args) {
+Scanner leia=new Scanner(System.in);
+System.out.println("Digite a sigla o estado da equipe em letras maiúsculas: ");
+String esta=leia.nextLine();
+System.out.println("Digite o nome e o número de pontos do primeiro jogador: ");
+String pla1=leia.nextLine();
+int not1=leia.nextInt();
+leia.nextLine();
+System.out.println("Digite o nome e o número de pontos do segundo jogador: ");	
+String pla2=leia.nextLine();
+int not2=leia.nextInt();
+leia.nextLine();
+System.out.println("Digite o nome e o número de pontos do terceiro jogador: ");		
+String pla3=leia.nextLine();
+int not3=leia.nextInt();
+if(not1>=not2 && not1>=not3) {
+	if(not2>=not3) {
+		System.out.println(pla1+": "+not1);
+		System.out.println(pla2+": "+not2);
+	    System.out.println(pla3+": "+not3);
+	}else {
+		System.out.println(pla1+": "+not1);
+		System.out.println(pla3+": "+not3);
+	    System.out.println(pla2+": "+not2);
+	}
+}else if(not2>=not1 && not2>=not3) {
+	if(not1>=not3) {
+		System.out.println(pla2+": "+not2);
+		System.out.println(pla1+": "+not1);
+	    System.out.println(pla3+": "+not3);
+	}else {
+		System.out.println(pla2+": "+not2);
+		System.out.println(pla3+": "+not3);
+	    System.out.println(pla1+": "+not1);
+	}
+}else{
+	if(not1>=not2) {
+		System.out.println(pla3+": "+not3);
+		System.out.println(pla1+": "+not1);
+	    System.out.println(pla2+": "+not2);
+	}else {
+		System.out.println(pla3+": "+not3);
+		System.out.println(pla2+": "+not2);
+	    System.out.println(pla1+": "+not1);
+	}
+}
+if(not1+not2+not3>100) {
+	double med=(not1+not2+not3)/3;
+	System.out.printf("Média da equipe: %.2f",med);
+}else {
+	System.out.println("Equipe desclassificada");
+}
+
+	
+	
+	
+	
+	
+	}
+	}
+
+

@@ -1,0 +1,16 @@
+package pagina7;
+import java.util.Scanner;
+public class Alg150 {
+
+	public static void main(String[] args) {
+Scanner leia=new Scanner(System.in);
+System.out.println("Digite o ângulo em graus: ");		
+double angulo=leia.nextDouble();
+int quadrante=(int)(angulo/90)%4;
+if(quadrante%2==0) {
+double seno=Math.sin(Math.toRadians(angulo));
+System.out.println("O seno do ângulo é: "+seno);
+}else {
+double cosseno=Math.cos(Math.toRadians(angulo));
+System.out.println("O co-seno do ângulo é: "+cosseno);
+}}}

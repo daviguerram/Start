@@ -1,0 +1,27 @@
+package pagina7;
+import java.util.Scanner;
+public class Alg151 {
+
+	public static void main(String[] args) {
+Scanner leia=new Scanner(System.in);
+System.out.println("Digite seu peso em Kg: ");	
+int peso=leia.nextInt();
+System.out.println("Digite sua altura em metros: ");
+double altura=leia.nextDouble();
+double imc=peso/(altura*altura);
+if(imc<20) {
+	System.out.println("Abaixo do peso");
+}else if(imc<=25) {
+	System.out.println("Normal");
+}else if(imc<=30) {
+	System.out.println("Excesso de peso");
+}else if(imc<=35) {
+	System.out.println("Obesidade");
+}else {
+	System.out.println("Obesidade mórbida");
+}
+
+}
+	}
+
+

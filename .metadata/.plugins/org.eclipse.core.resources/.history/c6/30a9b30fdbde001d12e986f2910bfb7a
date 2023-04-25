@@ -1,0 +1,14 @@
+package pagina6;
+import java.util.Scanner;
+public class Alg147{
+public static void main(String[] args) {
+Scanner scanner= new Scanner(System.in);
+String prato, sobremesa, bebida;
+int Caloriasprato=0, caloriasSobremesa=0, caloriasBebida=0;
+System.out.println("Escolha um prato: ");
+System.out.println("1- Vegetariano");
+System.out.println("2- Peixe");
+System.out.println();
+
+}
+}

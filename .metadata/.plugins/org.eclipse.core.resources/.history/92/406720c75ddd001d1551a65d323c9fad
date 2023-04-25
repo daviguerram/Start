@@ -1,0 +1,33 @@
+package pagina4;
+import java.util.Scanner;
+public class Alg132 {
+public static void main(String[] args) {
+Scanner leia=new Scanner(System.in);	
+System.out.println("Digite uma quantia em R$: ");
+double din=leia.nextDouble();
+leia.nextLine();
+System.out.println("Tecle para qual moeda deseja converter: ");
+System.out.println("F- franco suiço");
+System.out.println("I- libra esterlina" );
+System.out.println("D- dolar");
+System.out.println("M- marco alemão");
+String con=leia.nextLine();
+if(con.equals("F")) {
+	din=din/5.58;
+	System.out.printf("A quantia de reais digitada convertida em francos suiços é de: %.2f",din);
+}else if(con.equals("I")) {
+	din=din/6.28;
+	System.out.printf("A quantia de reais digitada convertida em libras esterlinas é de: %.2f",din);
+}else if(con.equals("D")) {
+din=din/5.07;
+System.out.printf("A quantia de reais digitada convertida em dolares é de: %.2f",din);
+} else if(con.equals("M")) {
+	din=din*0.35;
+	System.out.printf("A quantia de reais digitasa convertida em marcos alemães é de:  %.2f",din);
+	
+} else {
+	System.out.println("Caractere inválido");
+}
+
+}
+}

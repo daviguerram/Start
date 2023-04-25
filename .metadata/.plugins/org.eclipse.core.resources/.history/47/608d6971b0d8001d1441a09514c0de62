@@ -1,0 +1,66 @@
+package pagina5;
+import java.util.Scanner;
+public class Alg141 {
+
+	public static void main(String[] args) {
+	Scanner leia=new Scanner(System.in);
+	System.out.println("Digite o nome dos três finalistas: ");		
+String nome1=leia.nextLine();
+String nome2=leia.nextLine();
+String nome3=leia.nextLine();
+System.out.println("Respectivamente, digite a pontuação desses três finalistas: ");
+int pontos1=leia.nextInt();	
+int pontos2=leia.nextInt();		
+int pontos3=leia.nextInt();	
+	String primeiro, segundo, terceiro;
+	int maior, medio, menor;
+	if(pontos1>=pontos2 && pontos1>=pontos3) {
+	primeiro=nome1;
+	maior=pontos1;
+	if (pontos2>=pontos3) {
+	segundo=nome2;
+	medio=pontos2;
+	terceiro=nome2;
+	menor=pontos2;
+	}
+	}else if(pontos2>=pontos1 && pontos2>=pontos3) {
+		primeiro=nome2;
+		maior=pontos2;
+		if (pontos1>=pontos3) {
+			segundo=nome1;
+			medio=pontos1;
+			terceiro=nome3;
+			menor=pontos3;
+		}else {
+			segundo=nome3;
+			medio=pontos3;
+			terceiro=nome1;
+			menor=pontos1;
+		}
+	}else {
+		primeiro=nome3;
+		maior=pontos3;
+		if(pontos1>=pontos2) {
+			segundo=nome2;
+			medio=pontos1;
+			terceiro=nome2;
+			menor=pontos2;
+		}else {
+			segundo=nome2;
+			medio=pontos2;
+			terceiro=nome1;
+			menor=pontos1;
+		}
+	}
+	System.out.printf("1. %s - %d pontos\n", primeiro, maior);
+	System.out.printf("2. %s - %d pontos\n", segundo, medio);
+	System.out.printf("3. %s - %d pontos\n", terceiro, menor);
+	
+	leia.close();
+			
+	
+	}
+	}
+	}
+
+}

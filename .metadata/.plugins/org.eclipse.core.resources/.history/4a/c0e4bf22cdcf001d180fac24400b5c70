@@ -1,0 +1,16 @@
+package codigos;
+import java.util.Scanner;
+public class Alg57 {
+
+	public static void main(String[] args) {
+Scanner leia = new Scanner(System.in);
+System.out.println("Digite a nota da PR1: ");		
+double pr1 = leia.nextDouble();		
+System.out.println("Digite a nota da PR2: ");	
+double pr2 = leia.nextDouble();	
+double trunc = (pr1+pr2)/2;	
+System.out.printf("Truncada: %2.f\n",trunc);
+System.out.println("Arredondada: "+Math.round(trunc));;	
+	}
+
+}

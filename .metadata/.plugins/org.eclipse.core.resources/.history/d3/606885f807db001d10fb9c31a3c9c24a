@@ -1,0 +1,285 @@
+package pagina6;
+
+import java.util.Scanner;
+
+public class Alg147 {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		System.out.println("Qual tipo de prato você vai comer?");
+		String prato = leia.nextLine();
+		System.out.println("Qual sobremesa você vai comer? ");
+		String sobre = leia.nextLine();
+		System.out.println("Qual bebida você vai beber?");
+		String bebida = leia.nextLine();
+		if (prato.equals("Vegetariano")) {
+			if (sobre.equals("Abacaxi")) {
+				if (bebida.equals("Chá")) {
+					int cal = 180 + 75 + 20;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de laranja")) {
+					int cal = 180 + 75 + 70;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de melão")) {
+					int cal = 180 + 75 + 100;
+					System.out.println("Total de calorias: " + cal);
+				} else if (sobre.equals("Refrigerante diet")) {
+					int cal = 180 + 75 + 65;
+					System.out.println("Total de calorias: " + cal);
+				} else {
+					System.out.println("Item inválido");
+				}
+			} else if (sobre.equals("Sorvete diet")) {
+				if (bebida.equals("Chá")) {
+					int cal = 180 + 110 + 20;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de laranja")) {
+					int cal = 180 + 110 + 70;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de melão")) {
+					int cal = 180 + 110 + 100;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Refrigerante diet")) {
+					int cal = 180 + 110 + 65;
+					System.out.println("Total de calorias: " + cal);
+				} else {
+					System.out.println("Item inválido");
+				}
+			} else if (sobre.equals("Mousse diet")) {
+				if (bebida.equals("Chá")) {
+					int cal = 180 + 170 + 20;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de laranja")) {
+					int cal = 180 + 170 + 70;
+					System.out.println(cal);
+				} else if (bebida.equals("Suco de melão")) {
+					int cal = 180 + 170 + 100;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Refrigerante diet")) {
+					int cal = 180 + 170 + 65;
+					System.out.println("Total de calorias: " + cal);
+				} else {
+					System.out.println("Item inválido");
+				}
+			} else if (sobre.equals("Mousse chocolate")) {
+				if (bebida.equals("Chá")) {
+					int cal = 180 + 200 + 20;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de laranja")) {
+					int cal = 180 + 200 + 70;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de melão")) {
+					int cal = 180 + 200 + 100;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Refrigerante diet")) {
+					int cal = 180 + 200 + 65;
+					System.out.println("Total de calorias: " + cal);
+				} else {
+					System.out.println("Item inválido");
+				}
+			} else {
+				System.out.println("Item inválido");
+			}
+		} else if (prato.equals("Peixe")) {
+			if (sobre.equals("Abacaxi")) {
+				if (bebida.equals("Chá")) {
+					int cal = 230 + 75 + 20;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de laranja")) {
+					int cal = 230 + 75 + 70;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de melão")) {
+					int cal = 230 + 75 + 100;
+					System.out.println("Total de calorias: " + cal);
+				} else if (sobre.equals("Refrigerante diet")) {
+					int cal = 230 + 75 + 65;
+					System.out.println("Total de calorias: " + cal);
+				} else {
+					System.out.println("Item inválido");
+				}
+			} else if (sobre.equals("Sorvete diet")) {
+				if (bebida.equals("Chá")) {
+					int cal = 230 + 110 + 20;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de laranja")) {
+					int cal = 230 + 110 + 70;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de melão")) {
+					int cal = 230 + 110 + 100;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Refrigerante diet")) {
+					int cal = 230 + 110 + 65;
+					System.out.println("Total de calorias: " + cal);
+				} else {
+					System.out.println("Item inválido");
+				}
+			} else if (sobre.equals("Mousse diet")) {
+				if (bebida.equals("Chá")) {
+					int cal = 230 + 170 + 20;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de laranja")) {
+					int cal = 230 + 170 + 70;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de melão")) {
+					int cal = 230 + 170 + 100;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Refrigerante diet")) {
+					int cal = 230 + 170 + 65;
+					System.out.println("Total de calorias: " + cal);
+				} else {
+					System.out.println("Item inválido");
+				}
+			} else if (sobre.equals("Mousse chocolate")) {
+				if (bebida.equals("Chá")) {
+					int cal = 230 + 200 + 20;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de laranja")) {
+					int cal = 230 + 200 + 70;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Suco de melão")) {
+					int cal = 230 + 200 + 100;
+					System.out.println("Total de calorias: " + cal);
+				} else if (bebida.equals("Refrigerante diet")) {
+					int cal = 230 + 200 + 65;
+					System.out.println("Total de calorias: " + cal);
+				} else {
+					System.out.println("Item inválido");
+				}}
+			else if (prato.equals("Frango")) {
+				if (sobre.equals("Abacaxi")) {
+					if (bebida.equals("Chá")) {
+						int cal = 250 + 75 + 20;
+						System.out.println("Total de calorias: " + cal);
+					} else if (bebida.equals("Suco de laranja")) {
+						int cal = 250 + 75 + 70;
+						System.out.println("Total de calorias: " + cal);
+					} else if (bebida.equals("Suco de melão")) {
+						int cal = 250 + 75 + 100;
+						System.out.println("Total de calorias: " + cal);
+					} else if (sobre.equals("Refrigerante diet")) {
+						int cal = 250 + 75 + 65;
+						System.out.println("Total de calorias: " + cal);
+					} else {
+						System.out.println("Item inválido");
+					}
+				} else if (sobre.equals("Sorvete diet")) {
+					if (bebida.equals("Chá")) {
+						int cal = 250 + 110 + 20;
+						System.out.println("Total de calorias: " + cal);
+					} else if (bebida.equals("Suco de laranja")) {
+						int cal = 250 + 110 + 70;
+						System.out.println("Total de calorias: " + cal);
+					} else if (bebida.equals("Suco de melão")) {
+						int cal = 250 + 110 + 100;
+						System.out.println("Total de calorias: " + cal);
+					} else if (bebida.equals("Refrigerante diet")) {
+						int cal = 250 + 110 + 65;
+						System.out.println("Total de calorias: " + cal);
+					} else {
+						System.out.println("Item inválido");
+					}
+				} else if (sobre.equals("Mousse diet")) {
+					if (bebida.equals("Chá")) {
+						int cal = 250 + 170 + 20;
+						System.out.println("Total de calorias: " + cal);
+					} else if (bebida.equals("Suco de laranja")) {
+						int cal = 250 + 170 + 70;
+						System.out.println("Total de calorias: " + cal);
+					} else if (bebida.equals("Suco de melão")) {
+						int cal = 250 + 170 + 100;
+						System.out.println("Total de calorias: " + cal);
+					} else if (bebida.equals("Refrigerante diet")) {
+						int cal = 250 + 170 + 65;
+						System.out.println("Total de calorias: " + cal);
+					} else {
+						System.out.println("Item inválido");
+					}
+				} else if (sobre.equals("Mousse chocolate")) {
+					if (bebida.equals("Chá")) {
+						int cal = 250 + 200 + 20;
+						System.out.println("Total de calorias: " + cal);
+					} else if (bebida.equals("Suco de laranja")) {
+						int cal = 250 + 200 + 70;
+						System.out.println("Total de calorias: " + cal);
+					} else if (bebida.equals("Suco de melão")) {
+						int cal = 250 + 200 + 100;
+						System.out.println("Total de calorias: " + cal);
+					} else if (bebida.equals("Refrigerante diet")) {
+						int cal = 250 + 200 + 65;
+						System.out.println("Total de calorias: " + cal);
+					} else {
+						System.out.println("Item inválido");
+					}}
+		    else if (prato.equals("Carne")) {
+					if (sobre.equals("Abacaxi")) {
+						if (bebida.equals("Chá")) {
+							int cal = 350 + 75 + 20;
+							System.out.println("Total de calorias: " + cal);
+						} else if (bebida.equals("Suco de laranja")) {
+							int cal = 350 + 75 + 70;
+							System.out.println("Total de calorias: " + cal);
+						} else if (bebida.equals("Suco de melão")) {
+							int cal = 350 + 75 + 100;
+							System.out.println("Total de calorias: " + cal);
+						} else if (sobre.equals("Refrigerante diet")) {
+							int cal = 350 + 75 + 65;
+							System.out.println("Total de calorias: " + cal);
+						} else {
+							System.out.println("Item inválido");
+						}
+					} else if (sobre.equals("Sorvete diet")) {
+						if (bebida.equals("Chá")) {
+							int cal = 350 + 110 + 20;
+							System.out.println("Total de calorias: " + cal);
+						} else if (bebida.equals("Suco de laranja")) {
+							int cal = 350 + 110 + 70;
+							System.out.println("Total de calorias: " + cal);
+						} else if (bebida.equals("Suco de melão")) {
+							int cal = 350 + 110 + 100;
+							System.out.println("Total de calorias: " + cal);
+						} else if (bebida.equals("Refrigerante diet")) {
+							int cal = 350 + 110 + 65;
+							System.out.println("Total de calorias: " + cal);
+						} else {
+							System.out.println("Item inválido");
+						}
+					} else if (sobre.equals("Mousse diet")) {
+						if (bebida.equals("Chá")) {
+							int cal = 350 + 170 + 20;
+							System.out.println("Total de calorias: " + cal);
+						} else if (bebida.equals("Suco de laranja")) {
+							int cal = 350 + 170 + 70;
+							System.out.println("Total de calorias: " + cal);
+						} else if (bebida.equals("Suco de melão")) {
+							int cal = 350 + 170 + 100;
+							System.out.println("Total de calorias: " + cal);
+						} else if (bebida.equals("Refrigerante diet")) {
+							int cal = 350 + 170 + 65;
+							System.out.println("Total de calorias: " + cal);
+						} else {
+							System.out.println("Item inválido");
+						}
+					} else if (sobre.equals("Mousse chocolate")) {
+						if (bebida.equals("Chá")) {
+							int cal = 350 + 200 + 20;
+							System.out.println("Total de calorias: " + cal);
+						} else if (bebida.equals("Suco de laranja")) {
+							int cal = 350 + 200 + 70;
+							System.out.println("Total de calorias: " + cal);
+						} else if (bebida.equals("Suco de melão")) {
+							int cal = 350 + 200 + 100;
+							System.out.println("Total de calorias: " + cal);
+						} else if (bebida.equals("Refrigerante diet")) {
+							int cal = 350 + 200 + 65;
+							System.out.println("Total de calorias: " + cal);
+						} else {
+							System.out.println("Item inválido");
+
+						}
+					}
+				}
+			}
+		}
+
+	}
+}

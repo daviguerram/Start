@@ -1,0 +1,23 @@
+package pagina1;
+import java.util.Scanner;
+public class Menu4 {
+
+	public static void main(String[] args) {
+Scanner leia=new Scanner(System.in);
+System.out.println("Digite um número: ");
+int num=leia.nextInt();
+if(num%3==0) {
+	System.out.println(num+" é divisível por três");
+}
+else {
+	System.out.println(num+ " não é divísivel por três");
+}
+if(num%7==0) {	
+	System.out.println(num+" é divisível por sete");
+}
+else {
+	System.out.println(num+" não é divisível por sete");
+}
+	}
+
+}
